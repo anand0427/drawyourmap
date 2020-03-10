@@ -1,5 +1,5 @@
 {
-	"proxy": "http://localhost:5000",
+	"proxy": "proxy:true",
 	"name": "geocodingwithaddresses",
 	"version": "0.1.0",
 	"private": true,
