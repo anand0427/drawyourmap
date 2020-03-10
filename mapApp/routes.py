@@ -2,6 +2,7 @@ from mapApp import app
 from flask import request, send_from_directory
 from geopy.geocoders import Nominatim
 import folium
+import os
 
 @app.route('/', defaults={'path': ''})
 def serve(path):
