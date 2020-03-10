@@ -1,4 +1,4 @@
-from flaskApp import app
+from mapApp import app
 from flask import request
 from geopy.geocoders import Nominatim
 import folium
