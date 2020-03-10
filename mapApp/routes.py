@@ -1,11 +1,18 @@
 from mapApp import app
-from flask import request, render_template
+from flask import request, send_from_directory
 from geopy.geocoders import Nominatim
 import folium
 
-@app.route('/')
-def name():
-    return render_template("index.html")
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists(app.static_folder + '/' + path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
+
+# def name():
+#     return render_template("index.html")
 
 @app.route('/getCity', methods = ["GET", "POST"])
 def cityName():
