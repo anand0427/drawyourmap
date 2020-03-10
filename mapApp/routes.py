@@ -1,11 +1,11 @@
 from mapApp import app
-from flask import request
+from flask import request, render_template
 from geopy.geocoders import Nominatim
 import folium
 
 @app.route('/')
 def name():
-    return {"json":"no extra urls"}
+    return render_template("index.html")
 
 @app.route('/getCity', methods = ["GET", "POST"])
 def cityName():
