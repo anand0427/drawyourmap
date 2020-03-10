@@ -34,4 +34,4 @@ def plotMap(locationList):
     m = folium.Map(location=[20, 0], zoom_start=3)
     for i in locationList:
         folium.Marker(i,icon=folium.Icon(color='green', icon='ok')).add_to(m)
-    m.save("../public/map.html")
+    m.save("../build/map.html")
