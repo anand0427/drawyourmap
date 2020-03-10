@@ -1,5 +1,5 @@
 {
-	"proxy": "proxy:true",
+	"proxy": "https://drawyourmap.herokuapp.com/",
 	"name": "geocodingwithaddresses",
 	"version": "0.1.0",
 	"private": true,
