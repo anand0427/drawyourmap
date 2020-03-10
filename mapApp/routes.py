@@ -5,7 +5,7 @@ import folium
 import os
 
 @app.route('/')
-def serve(path):
+def serve():
     return app.send_static_file('index.html')
 
 # def name():
