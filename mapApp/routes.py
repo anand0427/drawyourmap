@@ -27,11 +27,11 @@ def getCoordinates(cityNames):
         locationAddress = geolocator.geocode(i.strip())
         locationList.append(locationAddress[1])
     print(locationList)
-    plotMap(locationList)
+    plotMap(locationList, cityNames)
 
-def plotMap(locationList):
+def plotMap(locationList, cityNames):
 
     folMap = folium.Map(location=[20, 0], zoom_start=3)
-    for i in len(locationList):
-        folium.Marker(locationList[i],icon=folium.Icon(color='green', icon='ok', popup=locationList[c])).add_to(folMap)
+    for i in range(len(locationList)):
+        folium.Marker(locationList[i],icon=folium.Icon(color='green', icon='ok', popup=cityNames[i])).add_to(folMap)
     return render_template(folMap.get_root().render())
