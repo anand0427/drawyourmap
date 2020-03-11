@@ -27,7 +27,7 @@ def getCoordinates(cityNames):
         locationAddress = geolocator.geocode(i.strip())
         locationList.append(locationAddress[1])
     print(locationList)
-    plotMap(locationList, , render_templatecityNames)
+    plotMap(locationList, cityNames)
 
 def plotMap(locationList, cityNames):
 
