@@ -1,5 +1,5 @@
 from mapApp import app
-from flask import request
+from flask import request, render_template
 from geopy.geocoders import Nominatim
 import folium
 import os
@@ -27,7 +27,7 @@ def getCoordinates(cityNames):
         locationAddress = geolocator.geocode(i.strip())
         locationList.append(locationAddress[1])
     print(locationList)
-    plotMap(locationList, cityNames)
+    plotMap(locationList, , render_templatecityNames)
 
 def plotMap(locationList, cityNames):
 
