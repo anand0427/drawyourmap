@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+draw your map is a project for fun. The idea is to take city name inputs and plot and open the map in new tab which can be saved as html to embed in profile websites.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Flask. It is deployed on heroku using gunicorn. It has a bug. The plotted file is not able to save locally(I am not able to figure out how to save the html in a directory). The deployed project is [here](http://drawyourmap.herokuapp.com/)
 
 ## Available Scripts
 
