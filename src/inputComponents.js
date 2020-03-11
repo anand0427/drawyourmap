@@ -75,7 +75,7 @@ const classes = useStyles();
                       if (response.ok){
                         console.log(response);
                         console.log("response");
-                        window.open("http://drawyourmap.herokuapp.com/map.html", "_blank");
+                        window.open("http://drawyourmap.herokuapp.com/maps.html", "_blank");
                       }
                   }}>
                     Submit
